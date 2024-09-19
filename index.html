@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="image_off.png" alt="image_off" id="bulb">
+
+    <button id="btn" onclick="turn()">ON</button>
+
+
+
+    <script>
+        function turn() {
+            if (document.getElementById('btn').innerHTML == "ON") {
+                document.getElementById('bulb').src = "image_on.png"
+
+                document.getElementById('btn').innerHTML = 'OFF'
+            }else{
+                document.getElementById('bulb').src = "image_off.png"
+
+                document.getElementById('btn').innerHTML = 'ON'
+
+            }
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>
